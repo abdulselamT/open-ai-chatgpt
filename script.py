@@ -4,7 +4,7 @@ from telebot import types
 import openai
 bot = telebot.TeleBot(API_KEY,parse_mode=None)
 def answer_from_gpt(ask):
-	openai.api_key = "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"
+	openai.api_key = ""
 	response = openai.Completion.create(
 	  		model="text-davinci-003",
 	  		prompt=ask,
